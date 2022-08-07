@@ -1,5 +1,9 @@
 const Preloader = () => {
-  return <div>Preloader</div>;
+  return (
+    <div className="progress">
+      <div className="indeterminate"></div>
+    </div>
+  );
 };
 
 export default Preloader;
