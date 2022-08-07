@@ -1,7 +1,10 @@
-import GoodsItem from "./GoodsItem";
+import { useStore } from "effector-react";
 
-const Goods = (props) => {
-  const { goods = [] } = props;
+import GoodsItem from "./GoodsItem";
+import { $goods } from "../model";
+
+const Goods = () => {
+  const goods = useStore($goods);
 
   if (!goods.length) {
     return <h3>Nothing here</h3>;
