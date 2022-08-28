@@ -1,6 +1,7 @@
 import { useStore } from "effector-react";
 
 import GoodsItem from "./GoodsItem";
+
 import { $goods } from "../model";
 
 const Goods = () => {
