@@ -24,9 +24,6 @@ export const $goods = createStore([]).on(
   getGoodsFx.doneData,
   (_, goods) => goods
 );
-export const $isLoading = createStore(false)
-  .on(getGoodsFx, () => true)
-  .on(getGoodsFx.done, () => false);
 
 export const $cartGoods = createStore([]).on(goodAddedToCart, (cart, good) => {
   const goodIndex = cart.findIndex((item) => item.id === good.id);

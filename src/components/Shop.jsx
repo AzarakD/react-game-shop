@@ -4,10 +4,10 @@ import Preloader from "./Preloader";
 import Goods from "./Goods";
 import Cart from "./Cart";
 
-import { $isLoading, shopGate } from "../model";
+import { getGoodsFx, shopGate } from "../model";
 
 const Shop = () => {
-  const isLoading = useStore($isLoading);
+  const isLoading = useStore(getGoodsFx.pending);
 
   useGate(shopGate);
 
