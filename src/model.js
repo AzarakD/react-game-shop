@@ -56,5 +56,3 @@ forward({
   from: shopGate.open,
   to: getGoodsFx,
 });
-
-$cartGoods.watch((s) => console.log(s));
